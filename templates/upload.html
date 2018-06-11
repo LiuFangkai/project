@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+    <style>
+        label{display:inline-block;width:180px;text-align:left}
+        input{width:200px;height:30px;}
+        select{width:200px;height:30px;}
+        #submit{width:150px;height:30px;}
+        body{
+        width:100%;
+        height:100%;
+        background: #E9E9E9;
+        }
+    </style>
+
+<body>
+<div id="p1">
+<h1>文件上传</h1>
+<form action="" enctype="multipart/form-data" method="post">
+    <p>
+        <label>选择高分子类型：</label>
+        <select name="select">
+            <option selected="selected">--请选择高分子类型--</option>
+            <option value="JuBingXi">聚丙烯</option>
+            <option value="JuYangHuaYiXi">聚氧化乙烯</option>
+            <option></option>
+            <option></option>
+        </select>
+    </p>
+    <p>
+        <label>上传冷却曲线数据：</label>
+        <input type="file" name="file2">
+    </p>
+    <p>
+        <label>上传升温曲线数据：</label>
+        <input type="file" name="file3">
+    </p>
+    <p>
+        <label>输入熔融焓：</label>
+        <input type="text" name="Hm">
+    </p>
+    <p>
+        <label></label>
+    </p>
+    <input type="submit" value="提交">
+</form>
+</div>
+</body>
+</html>
